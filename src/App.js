@@ -10,7 +10,7 @@ function App() {
      <div>
        {/* <City/> */}
        {/* <Cityfun/> */}
-       <Contry/>
+       {<Contry/>}
      </div>
   );
 }
