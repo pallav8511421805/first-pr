@@ -3,12 +3,14 @@ import './App.css';
 import Demo from './components/Demo';
 import City from './containers/City';
 import Cityfun from './containers/Cityfun';
+import Contry from './containers/Contry';
 
 function App() {
   return (
      <div>
        {/* <City/> */}
-       <Cityfun/>
+       {/* <Cityfun/> */}
+       <Contry/>
      </div>
   );
 }
