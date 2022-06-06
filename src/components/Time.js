@@ -8,6 +8,10 @@ class Time extends Component {
            time : new Date()
         }
     }
+
+    componentDidMount = ()=>{
+        
+    } 
     
     render() {
         return (
