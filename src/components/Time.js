@@ -9,9 +9,23 @@ class Time extends Component {
         }
     }
 
-    componentDidMount = ()=>{
-        
+    tick = () => {
+     this.setState ({
+         time : new Date()
+     })
+    }
+
+    componentDidMount = () =>{
+       setInterval(() => this.tick(),1000)
     } 
+
+    componentDidUpdate = () => {
+
+    }
+
+    componentWillUnmount = () =>{
+        clearInterval(this.tick())
+    }
     
     render() {
         return (
