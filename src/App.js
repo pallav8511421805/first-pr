@@ -9,7 +9,8 @@ import Countryfun from './containers/Countryfun';
 function App() {
   return (
      <div>
-       <City />
+       <City/>
+       <City/>
        {/* <Cityfun/> */}
        {/* <Contry/> */}
      </div>
