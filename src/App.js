@@ -10,11 +10,11 @@ import Time from './components/Time';
 function App() {
   return (
      <div>
-       <Time/>
+       {/* <Time/> */}
        {/* <City/> */}
        {/* <City id="101"/> */}
        {/* <Cityfun/> */}
-       {/* <Contry/> */}
+       <Contry />
      </div>
   );
 }
