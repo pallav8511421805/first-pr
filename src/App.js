@@ -11,7 +11,7 @@ import Timefun from './containers/Timefun';
 function App() {
   return (
      <div>
-       {/* <Time/> */}
+       <Time/>
        <Timefun/>
        {/* <City/> */}
        {/* <City id="101"/> */}
