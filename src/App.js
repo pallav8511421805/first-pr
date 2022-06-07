@@ -6,11 +6,13 @@ import Cityfun from './containers/Cityfun';
 import Contry from './containers/Contry';
 import Countryfun from './containers/Countryfun';
 import Time from './components/Time';
+import Timefun from './containers/Timefun';
 
 function App() {
   return (
      <div>
-       <Time/>
+       {/* <Time/> */}
+       <Timefun/>
        {/* <City/> */}
        {/* <City id="101"/> */}
        {/* <Cityfun/> */}
