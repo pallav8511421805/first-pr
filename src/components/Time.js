@@ -20,7 +20,7 @@ class Time extends Component {
     } 
 
     componentDidUpdate = (prevProps, prevState) => {
-        if(this.state.time === prevState){
+        if(this.state.time  !== prevState.time){
             console.log("componentdidmount");
         }
     }
