@@ -13,10 +13,6 @@ function App() {
      <div>
        <Time/>
        <Timefun/>
-       {/* <City/> */}
-       {/* <City id="101"/> */}
-       {/* <Cityfun/> */}
-       {/* <Contry /> */}
      </div>
   );
 }
