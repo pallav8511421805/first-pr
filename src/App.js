@@ -7,12 +7,14 @@ import Contry from './containers/Contry';
 import Countryfun from './containers/Countryfun';
 import Time from './components/Time';
 import Timefun from './containers/Timefun';
+import Counter from './components/Counter';
 
 function App() {
   return (
      <div>
-       <Time/>
-       <Timefun/>
+       {/* <Time/>
+       <Timefun/> */}
+       <Counter/>
      </div>
   );
 }
