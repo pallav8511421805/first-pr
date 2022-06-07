@@ -5,8 +5,6 @@ import Counter from './components/Counter';
 function App() {
   return (
      <div>
-       {/* <Time/>
-       <Timefun/> */}
        <Counter/>
      </div>
   );
