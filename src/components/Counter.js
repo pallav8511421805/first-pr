@@ -3,10 +3,14 @@ import React, { useState } from 'react';
 function Counter(props) {
     const [counter, setcounter] = useState(0);
     const plus = () => {
-            setcounter(counter + 1);
+            if(counter < 10){
+                setcounter(counter + 1);
+            }
     }
     const minus = () => {
-        setcounter(counter - 1);
+        if(counter > 0){
+            setcounter(counter - 1);
+        }
     }
     return (
         <div>
