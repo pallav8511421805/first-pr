@@ -4,7 +4,7 @@ function Loading(Component) {
     return function withloadcomponent({isloading,data}){
         if(isloading){
             return (
-                <h1>Loading .....</h1>
+                <h1>Loading.....</h1>
             )
         } else{
             return (

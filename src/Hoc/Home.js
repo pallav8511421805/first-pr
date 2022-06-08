@@ -7,8 +7,7 @@ function Home({data}) {
                 data.map((d,i)=>{
                    return(
                     <div key={i}>
-                    <h3>{d.id}</h3>
-                    <h2>{d.name}</h2>
+                    <div style={{display:"flex",flexWrap:"wrap",color:"crimson",fontWeight:"bold",fontSize:"24px"}}><p>{d.id+" "+d.name}</p></div>
                     </div>
                    )
                 })
