@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, CardBody, CardTitle, Input, Button, Label } from "reactstrap";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Loginform(props) {
     return (
