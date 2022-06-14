@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Data(props) {
+function Data({Edata}) {
     return (
         <table>
         {
