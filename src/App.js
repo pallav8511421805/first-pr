@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import Data from "./Exam/Data";
 import Loading from "./Exam/Loading";
 
+const Hoc = Loading(Data);
 function App() {
-  const Hoc = Loading(Data);
+  
   const [Edata,setEdata] = useState([]);
   const [Eload,setEload] = useState(true);
-  useEffect(()=>{
   const Employee =[{
     id: 101,
     name: 'Amit',
@@ -31,11 +31,12 @@ function App() {
     joining_date: "01-12-2021",
     salary: 30000
 }];
+  useEffect(()=>{
+  setEload(true);
   setInterval (setEload(false),setEdata({Employee}),2000);
   },[])
-
   return (
-      <Hoc isload={Eload} isdata={Edata}/>
+      <Hoc isload={Eload} data={Edata}/>
   );
 }
 

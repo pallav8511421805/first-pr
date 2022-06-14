@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 
 function Loading(Component) {
-    return function withload(){
+    return function withload({isload,data}){
         if(isload){
-            <h2>LOADING....</h2>
+            return(
+                <h2>LOADING....</h2>
+            )
         } else{
-            <Component isdata = {Edata} />
+            return(
+                <Component data = {Edata} />
+            )
+            
         }
     }
 }
