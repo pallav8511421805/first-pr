@@ -7,11 +7,12 @@ function Data(props) {
             
             Edata.map((d,i)=>{
                 <>
-             <tr key={i}></tr>
+             <tr key={i}>
              <td>{d.id}</td>
              <td>{d.name}</td>
              <td>{d.joining_date}</td>
              <td>{d.salary}</td>
+             </tr>
              </>
             })
         }

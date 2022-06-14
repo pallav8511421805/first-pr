@@ -7,36 +7,35 @@ function App() {
   const [Edata,setEdata] = useState([]);
   const [Eload,setEload] = useState(true);
   useEffect(()=>{
-    setEdata(Employee =[{
-      id: 101,
-      name: 'Amit',
-      joining_date: "01-06-2021",
-      salary: 50000
-  },
-  {
-      id: 102,
-      name: 'Piyush',
-      joining_date: "01-01-2019",
-      salary: 60000
-  },
-  {
-      id: 103,
-      name: 'Meet',
-      joining_date: "01-03-2020",
-      salary: 25000
-  },
-  {
-      id: 104,
-      name: 'Lalit',
-      joining_date: "01-12-2021",
-      salary: 30000
-  }])
-  const Employee = []
-  setInterval (setEload(false),setEdata(),2000);
+  const Employee =[{
+    id: 101,
+    name: 'Amit',
+    joining_date: "01-06-2021",
+    salary: 50000
+},
+{
+    id: 102,
+    name: 'Piyush',
+    joining_date: "01-01-2019",
+    salary: 60000
+},
+{
+    id: 103,
+    name: 'Meet',
+    joining_date: "01-03-2020",
+    salary: 25000
+},
+{
+    id: 104,
+    name: 'Lalit',
+    joining_date: "01-12-2021",
+    salary: 30000
+}];
+  setInterval (setEload(false),setEdata({Employee}),2000);
   },[])
 
   return (
-      <Hoc isload = {Eload} isdata ={Edata}/>
+      <Hoc isload={Eload} isdata={Edata}/>
   );
 }
 
