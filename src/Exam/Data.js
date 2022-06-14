@@ -1,7 +1,10 @@
 import React from 'react';
 
 function Data({data}) {
+    let Efilter = data.filter((ed, inx) => ed.salary > 25000); 
     return (
+        <>
+        <h1 align="center">Employee data</h1>
         <table border="1px" width="750px" align="center" cellSpacing="0" cellPadding="0"> 
          <tr> 
            <th>NAME</th> 
@@ -10,18 +13,19 @@ function Data({data}) {
            <th>JOINING-DATE</th> 
          </tr> 
          { 
-           data.map((data2, i2) => { 
+           Efilter.map((d, i) => { 
              return ( 
-               <tr key={i2}> 
-                 <td align="center">{data2.name}</td> 
-                 <td align="center">{data2.id}</td> 
-                 <td align="center">{data2.salary}</td> 
-                 <td align="center">{data2.joining_date}</td> 
+               <tr key={i}> 
+                 <td align="center">{d.name}</td> 
+                 <td align="center">{d.id}</td> 
+                 <td align="center">{d.salary}</td> 
+                 <td align="center">{d.joining_date}</td> 
                </tr> 
              ) 
            }) 
          } 
-       </table> 
+       </table>
+       </> 
     );
 }
 
