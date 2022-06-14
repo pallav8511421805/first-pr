@@ -8,7 +8,7 @@ function Loading(Component) {
             )
         } else{
             return(
-                <Component data = {Edata} />
+                <Component data={data} />
             )
             
         }

@@ -5,7 +5,7 @@ import Loading from "./Exam/Loading";
 const Hoc = Loading(Data);
 function App() {
   
-  const [Edata,setEdata] = useState([]);
+  const [data,setEdata] = useState([]);
   const [Eload,setEload] = useState(true);
   const Employee =[{
     id: 101,
@@ -33,10 +33,12 @@ function App() {
 }];
   useEffect(()=>{
   setEload(true);
-  setInterval (setEload(false),setEdata({Employee}),2000);
+  setTimeout(()=>{
+    setEload(false);setEdata(Employee)
+  },2000);
   },[])
   return (
-      <Hoc isload={Eload} data={Edata}/>
+      <Hoc isload={Eload} data={data}/>
   );
 }
 
