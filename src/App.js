@@ -16,7 +16,7 @@ function App() {
 {
     id: 102,
     name: 'Piyush',
-    joining_date: "01-01-2019 ",
+    joining_date: "01-01-2019",
     salary: 60000
 },
 {
